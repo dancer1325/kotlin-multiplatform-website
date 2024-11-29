@@ -2,23 +2,26 @@
 
 ## JetBrains Fleet code editor
 
-For the best Kotlin Multiplatform development experience, we recommend using [JetBrains Fleet](https://www.jetbrains.com/fleet/).  
-Fleet is a code editor for any language that can transform into a more powerful tool for development.
-It is designed to be smart and focused on core development workflows (the edit-build-run loop), 
-AI-capable, and ready for remote development and collaboration.
-
-Fleet supports testing and debugging your code on all target platforms. You can also navigate between Kotlin
-Multiplatform code and code written in other languages interoperable with Kotlin.
-
-See the [Use Fleet for Multiplatform development](fleet.md) tutorial to get started.
-
-> Kotlin Multiplatform support in Fleet is still in the early stages of development. You may face issues and
-> limitations, but we're committed to fixing them based on [your feedback](fleet.md#leave-feedback).
->
-{style="note"}
+* [JetBrains Fleet](https://www.jetbrains.com/fleet/)
+  * == code editor
+    * -- for -- ANY language
+    * designed FOR
+      * core development workflows (the edit-build-run loop),
+      * AI-capable,
+      * remote development and collaboration
+    * supports
+      * | ALL target platforms
+        * testing
+        * debugging
+      * 👀for Kotlin Multiplatform 👀
+        * EARLY stages of development 
+    * allows
+      * 👀navigate between Kotlin Multiplatform code -- & -- code / written | other languages -- interoperable with -- Kotlin👀
+  * see [Use Fleet for Multiplatform development](fleet.md)
 
 ## Android Studio IDE
 
+* TODO:
 As a more stable solution, you can use [Android Studio](https://developer.android.com/studio),
 although its support for Kotlin Multiplatform is limited.
 
