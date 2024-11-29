@@ -1,10 +1,10 @@
 [//]: # (title: Set up an environment)
 
-Before you create your first Kotlin Multiplatform application, you need to set up an environment for KMP development.
+* goal
+  * set up an environment -- for -- KMP development
+    * == requirements to create your first Kotlin Multiplatform application
 
 ## Install the necessary tools
-
-We recommend that you install the latest stable versions for compatibility and better performance.
 
 <table>
    <tr>
@@ -13,73 +13,61 @@ We recommend that you install the latest stable versions for compatibility and b
    </tr>
     <tr>
         <td><a href="https://developer.android.com/studio">Android Studio</a></td>
-        <td>You will use Android Studio to create your multiplatform applications and run them on simulated or hardware devices.</td>
+        <td>uses <br>&nbsp; 1. create your multiplatform applications <br>&nbsp; 2. run them | simulated or hardware devices</td>
     </tr>
     <tr>
         <td>
           <p><a href="https://apps.apple.com/us/app/xcode/id497799835">Xcode</a></p>
-          <p>Xcode is required if you want to run iOS applications on a simulated or real device. If you use a different operating system, skip this tool.</p>
         </td>
         <td>
-          <p>Launch Xcode in a separate window to accept its license terms and allow it to perform some necessary initial tasks.</p>
-          <p>Most of the time, Xcode will work in the background. You will use it to add Swift or Objective-C code to your iOS application.</p>
-            <note>
-              <p>
-                We generally recommend using the latest stable versions for all tools. However, Kotlin/Native sometimes doesn't support the newest Xcode right away. You can check supported versions in the <a href="https://kotlinlang.org/docs/multiplatform-compatibility-guide.html#version-compatibility">compatibility guide</a>, and if necessary, <a href="https://developer.apple.com/download/all/?q=Xcode">install an earlier version of Xcode</a>.
-              </p>
-            </note>   
+          <p> if you want to run iOS applications | simulated or real device -> you need it </p>
+          uses <br>&nbsp; 1. add Swift or Objective-C code | your iOS application
+          <p> Kotlin/Native sometimes does NOT support the newest Xcode -> see <a href="https://kotlinlang.org/docs/multiplatform-compatibility-guide.html#version-compatibility">compatibility guide</a>
+          </p>   
       </td>
    </tr>
    <tr>
         <td><a href="https://www.oracle.com/java/technologies/javase-downloads.html">JDK</a></td>
-        <td>To check whether Java is installed, run the following command in the Android Studio terminal or your command line: <code style="block"
-            lang="bash">java -version</code></td>
    </tr>
    <tr>
         <td><a href="https://kotlinlang.org/docs/multiplatform-plugin-releases.html">Kotlin Multiplatform plugin</a></td>
-        <td>In Android Studio, open <strong>Settings</strong> (<strong>Preferences</strong>) and find the <strong>Plugins</strong> page. Search the <strong>Marketplace</strong> tab for <i>Kotlin Multiplatform</i>, and then install it.</td>
+        <td>install it | Android Studio</td>
    </tr>
    <tr>
         <td><a href="https://kotlinlang.org/docs/releases.html#update-to-a-new-release">Kotlin plugin</a></td>
         <td>
-            <p>The Kotlin plugin is bundled and automatically updated with each Android Studio release.</p>
+            <p>bundled and automatically updated / EACH Android Studio release</p>
         </td>
    </tr>
 </table>
 
-## Check your environment
+## Check your environment -- KDoctor -- 
 
-To make sure everything works as expected, install and run the KDoctor tool:
-
-> KDoctor works on macOS only. If you use a different operating system, skip this step.
->
-{style="note"}
-
-1. In the Android Studio terminal or your command-line tool, run the following command to install the tool using Homebrew:
-
-    ```bash
-    brew install kdoctor
-    ```
-
-   If you don't have Homebrew yet, [install it](https://brew.sh/) or see the KDoctor [README](https://github.com/Kotlin/kdoctor#installation) for other ways to install it.
-2. After the installation is completed, call KDoctor in the console: 
+* requirements
+  * available ONLY | macOS
+    * if you use another OS -> skip this section
+* allows
+  * checking everything works as expected
+* steps
+  * install kdoctor
+    * -- via -- homebrew 
+      ```bash
+          brew install kdoctor
+      ```
+    * [another alternatives](https://github.com/Kotlin/kdoctor#installation)
+  * run it
 
     ```bash
     kdoctor
     ```
 
-3. If KDoctor diagnoses any problems while checking your environment, review the output for issues and possible solutions:
-
-   * Fix any failed checks (`[x]`). You can find problem descriptions and potential solutions after the `*` symbol.
-   * Check the warnings (`[!]`) and successful messages (`[v]`). They may contain useful notes and tips, as well.
+    * if KDoctor diagnoses any problems ->
+      * follow the suggestions
+      * check [stackOverflow link](https://stackoverflow.com/questions/64901180/how-to-run-cocoapods-on-apple-silicon-m1/66556339#66556339)
    
-   > You may ignore KDoctor's warnings regarding the CocoaPods installation. In your first project, you will use a
-   > different iOS framework distribution option.
-   >
-   {style="tip"}
-
 ## Possible issues and solutions
 
+* TODO:
 <deflist collapsible="true">
    <def title="Kotlin and Android Studio">
       <list>
