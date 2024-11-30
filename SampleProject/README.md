@@ -7,7 +7,6 @@
 * Using [KMP wizard](https://kmp.jetbrains.com/)
 
 ## Structure
-
 * `/composeApp`
   * 👀== code / -- will be shared ACROSS your -- Compose Multiplatform applications👀
     * `/commonMain`
